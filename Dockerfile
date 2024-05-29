@@ -5,7 +5,7 @@ WORKDIR /home
 RUN apt-get update && apt-get install pkg-config libcairo2-dev vim git -y
 RUN apt-get autoremove opencv-python -y
 RUN git clone https://github.com/licksylick/AutoTrackAnything.git
-COPY ./traking.py /home/AutoTrackAnything
+COPY tracking.py /home/AutoTrackAnything
 
 WORKDIR /home/AutoTrackAnything
 RUN pip install -U pip
