@@ -10,7 +10,7 @@ Dockerfile, codes, and a simple setup script to display frames obtained from a n
 1. Preparation
 ```
 $ bash setup.sh
-$ sudo docker run --name tracker --network host --runtime nvidia autotrackanything -it /bin/bash
+$ sudo docker run --name tracker --network host --runtime nvidia -it autotrackanything /bin/bash
 ```
 
 2. Edit config (optional)
