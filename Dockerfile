@@ -15,4 +15,4 @@ RUN pip install opencv-python==4.6.0.66 --user
 RUN pip install -U ultralytics
 RUN python3 download_models.py
 RUN wget https://videos.pexels.com/video-files/10901926/10901926-sd_640_360_30fps.mp4 -O sample.mp4
-RUN export DISPLAY=:1
+ENV DISPLAY=:1
